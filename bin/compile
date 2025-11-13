@@ -71,6 +71,7 @@ echo "Installed Bun v$(bun --version)"
 set +e
 
 cd $BUILD_DIR
+BUILDPACK_DIR="$(cd "$(dirname "$0")"; cd ..; pwd)"
 
 # download dependencies
 if [[ -f package.json && ! -f .skip-bun-install ]]
