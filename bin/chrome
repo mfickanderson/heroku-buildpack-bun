@@ -72,7 +72,7 @@ curl --silent --show-error --fail --retry 3 --retry-connrefused --connect-timeou
 unzip -q -o "$ZIP_LOCATION" -d "$INSTALL_DIR" | indent
 rm -f "$ZIP_LOCATION"
 
-source "$BUILDPACK_DIR/bin/install-chrome-dependencies"
+#source "$BUILDPACK_DIR/bin/install-chrome-dependencies"
 
 echo "Adding executables to PATH" | indent
 mkdir -p "$BUILD_DIR/.profile.d"
