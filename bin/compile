@@ -101,5 +101,5 @@ then
   echo "Running Heroku postbuild script..."
   bun run heroku-postbuild
 fi
-echo "Running chrome install script..."
-source "$BUILDPACK_DIR/bin/chrome"
+# echo "Running chrome install script..."
+# source "$BUILDPACK_DIR/bin/chrome"
